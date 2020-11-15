@@ -24,6 +24,10 @@ client.on('message', message => {
         else if (command === 'pog') {
             pogcmd(message);
         }
+		else if (command == 'unwritten'){
+			message.channel.send('-play unwritten');
+			message.channel.send('there u go sexy boi');
+		}
     }
     catch (e) {
         if (!message.content.indexOf('//debug') == -1) {
@@ -46,7 +50,7 @@ function peniscmd(message) {
         scale = 'Huge PP';
     }
     else if (message.author.username.toLowerCase() == 'gru') {
-        scale = 'Tiny PP';
+        scale = 'Biggest god damn PP in the world';
     }
     else if (message.author.username.toLowerCase() == 'vesebe') {
         scale = 'Long PP';
